@@ -13,6 +13,7 @@
 		2190D6921F05035100936FE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2190D6911F05035100936FE8 /* Assets.xcassets */; };
 		2190D6951F05035100936FE8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2190D6931F05035100936FE8 /* LaunchScreen.storyboard */; };
 		2190D6A01F05035200936FE8 /* simpleWebViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2190D69F1F05035200936FE8 /* simpleWebViewTests.swift */; };
+		2190D6AB1F05052E00936FE8 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2190D6AA1F05052E00936FE8 /* WebViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		2190D69B1F05035200936FE8 /* simpleWebViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = simpleWebViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2190D69F1F05035200936FE8 /* simpleWebViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = simpleWebViewTests.swift; sourceTree = "<group>"; };
 		2190D6A11F05035200936FE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2190D6AA1F05052E00936FE8 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				2190D6911F05035100936FE8 /* Assets.xcassets */,
 				2190D6931F05035100936FE8 /* LaunchScreen.storyboard */,
 				2190D6961F05035100936FE8 /* Info.plist */,
+				2190D6AA1F05052E00936FE8 /* WebViewController.swift */,
 			);
 			path = simpleWebView;
 			sourceTree = "<group>";
@@ -200,6 +203,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2190D68D1F05035100936FE8 /* ViewController.swift in Sources */,
+				2190D6AB1F05052E00936FE8 /* WebViewController.swift in Sources */,
 				2190D68B1F05035100936FE8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -340,10 +344,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = simpleWebView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = noraworld.simpleWebView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -352,10 +358,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = simpleWebView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = noraworld.simpleWebView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};

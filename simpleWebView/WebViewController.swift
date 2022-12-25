@@ -8,12 +8,34 @@
 
 import UIKit
 
-class WebViewController: UIViewController {
+class WebViewController: UIViewController, UIWebViewDelegate {
+    // webView propaty from StoryBoard
+    @IBOutlet weak var webView: UIWebView!
+
+    let initialUrl = NSURL(string: "https://www.google.co.jp")
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        // self.webViewdelete = self
+        self.webView.delegate = self
+        
+        let request = NSURLRequest(url: initialUrl! as URL)
+        self.webView.loadRequest(request as URLRequest)
+        
+        webView.scrollView.isScrollEnabled = true
+    }
+
+    @IBAction func prevBtn(_ sender: Any) {
+        if self.webView.canGoBack {
+            self.webView.goBack()
+        }
+    }
+
+    @IBAction func nextBtn(_ sender: Any) {
+        if self.webView.canGoForward {
+            self.webView.goForward()
+        }
     }
 
     override func didReceiveMemoryWarning() {
